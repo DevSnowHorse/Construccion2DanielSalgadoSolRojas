@@ -10,16 +10,16 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 @Service
-public class AdminService {
+public class AdminService {}
 
     @Autowired
-    private UserPort userPort;
+    private  interface UserPort userPort;
 
     @Autowired
-    private VeterinarianPort veterinarianPort;
+    private  interface VeterinarianPort veterinarianPort;
 
     @Autowired
-    private DealerPort dealerPort;
+    private  interface DealerPort dealerPort;
 
     public void registerVeterinarian(Veterinarian veterinarian) throws Exception {
         if (userPort.existUserName(veterinarian.getUserName())) {
@@ -47,5 +47,6 @@ public class AdminService {
         userPort.saveUser(user);
     }
 
-  
-}
+
+
+

@@ -1,5 +1,7 @@
 package app.domain.models;
 
+import java.sql.Date;
+
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -7,36 +9,66 @@ import lombok.Setter;
 @Setter
 @Getter
 @NoArgsConstructor
-public class Bill extends HistoryClinic{
+public class Bill {
 
+	private long billID;            
+    private Pet pet;          
+    private Person owner;
+    private Order order;
+    private String medicine;           
+    private int price;              
+    private long amount;
+	private Date dateCreated;
 	
-	private String idOrdenn;            
-    private long idMascota;          
-    private long cedulaDueño;         
-    private long cedulaVeterinario;    
-    private String medicamento;        
-    private String dosis;              
-    private String fechaGeneracion;
-	public Bill(long cedula, String name, long edad, String userName, String password, long fecha,
-			String medicoVeterinario, String motivoConsulta, String sintomatologia, String diagnostico,
-			String procedimiento, String medicamento, String dosisMedicamento, long idOrden, String historialVacunacion,
-			String alergiasMedicamentos, String detalleProcedimiento, boolean anulacion, String idOrdenn,
-			long idMascota, long cedulaDueño, long cedulaVeterinario, String medicamento2, String dosis,
-			String fechaGeneracion) {
-		super(cedula, name, edad, userName, password, fecha, medicoVeterinario, motivoConsulta, sintomatologia,
-				diagnostico, procedimiento, medicamento, dosisMedicamento, idOrden, historialVacunacion,
-				alergiasMedicamentos, detalleProcedimiento, anulacion);
-		this.idOrdenn = idOrdenn;
-		this.idMascota = idMascota;
-		this.cedulaDueño = cedulaDueño;
-		this.cedulaVeterinario = cedulaVeterinario;
-		medicamento = medicamento2;
-		this.dosis = dosis;
-		this.fechaGeneracion = fechaGeneracion;
+	public long getBillID() {
+		return billID;
 	}
-    
-    
-    
+	public void setBillID(long billID) {
+		this.billID = billID;
+	}
+	public Pet getPet() {
+		return pet;
+	}
+	public void setPet(Pet pet) {
+		this.pet = pet;
+	}
+	public Person getOwner() {
+		return owner;
+	}
+	public void setOwner(Person owner) {
+		this.owner = owner;
+	}
+	public Order getOrder() {
+		return order;
+	}
+	public void setOrder(Order order) {
+		this.order = order;
+	}
+	public String getMedicine() {
+		return medicine;
+	}
+	public void setMedicine(String medicine) {
+		this.medicine = medicine;
+	}
+	public int getPrice() {
+		return price;
+	}
+	public void setPrice(int price) {
+		this.price = price;
+	}
+	public long getAmount() {
+		return amount;
+	}
+	public void setAmount(long amount) {
+		this.amount = amount;
+	}
+	public Date getDateCreated() {
+		return dateCreated;
+	}
+	public void setDateCreated(Date dateCreated) {
+		this.dateCreated = dateCreated;
+	}
+	
 	}
 	
 	

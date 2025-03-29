@@ -10,14 +10,22 @@ import lombok.Setter;
 @NoArgsConstructor
 
 public class User extends Person{
-	private String userName;
+	private String username;
 	private String password;
-	public User(long cedula, String name, long edad, String userName, String password) {
-		super(cedula, name, edad);
-		this.userName = userName;
+	
+	public String getUsername() {
+		return username;
+	}
+	public String getPassword() {
+		return password;
+	}
+	public void setPassword(String password) {
 		this.password = password;
 	}
-
+	public void setUsername(String username) {
+		this.username = username;
+	}
+	
 	
 
 	}
