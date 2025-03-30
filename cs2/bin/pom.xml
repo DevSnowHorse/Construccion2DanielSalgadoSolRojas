@@ -93,7 +93,7 @@
                             <goal>exec</goal>
                         </goals>
                         <configuration>
-                            <mainClass>app.Cs2Application¿</mainClass>
+                            <mainClass>app.Cs2Application</mainClass>
                         </configuration>
                     </execution>
                 </executions>

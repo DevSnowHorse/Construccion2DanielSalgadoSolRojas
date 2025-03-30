@@ -1,4 +1,4 @@
-package app.domain.services;
+package app.domain.servicies;
 
 import app.domain.models.Bill;
 import app.domain.repositories.BillRepository;
