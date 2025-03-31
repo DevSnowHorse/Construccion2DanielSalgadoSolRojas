@@ -14,6 +14,7 @@ public class Person {
     private String name;
     private long age;
     private String role;
+    private long cellPhone;
 	public long getId() {
 		return id;
 	}
