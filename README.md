@@ -4,7 +4,7 @@
 - [Nombre del Integrante 2](enlace-al-perfil-github)
 - [Nombre del Integrante 3](enlace-al-perfil-github)
 ## Tecnología en que se Desarrolló
-- <Eclipse>
+- Eclipse
 ---
 # Nombre del Proyecto
 Construccion2DanielSalgadoSolRojas
